@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(251, 205, 4);
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .skill-container {
+            width: 90%;
+            margin: 10px auto;
+            background-color: rgba(7, 7, 7, 0.986);
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .skill {
+            text-align: left;
+            padding: 10px;
+            line-height: 30px;
+            color: white;
+            font-weight: bold;
+            white-space: nowrap;
+            animation: grow 2s ease-in-out forwards;
+        }
+
+        /* Animation for skill bars */
+        @keyframes grow {
+            from {
+                width: 0;
+            }
+            to {
+                width: var(--skill-width);
+            }
+        }
+
+        /* Skill bar colors */
+        .html {
+            background-color: blueviolet;
+            --skill-width: 90%;
+        }
+
+        .c {
+            background-color: blue;
+            --skill-width: 65%;
+        }
+
+        .css {
+            background-color: aqua;
+            --skill-width: 70%;
+        }
+
+        .python {
+            background-color: chartreuse;
+            --skill-width: 85%;
+        }
+
+        .javascript {
+            background-color: #f44336;
+            --skill-width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <div class="skill html">HTML 90%</div>
+        </div>
+        <div class="skill-container">
+            <div class="skill c">C language 65%</div>
+        </div>
+        <div class="skill-container">
+            <div class="skill css">CSS 70%</div>
+        </div>
+        <div class="skill-container">
+            <div class="skill python">Python 85%</div>
+        </div>
+        <div class="skill-container">
+            <div class="skill javascript">JavaScript 30%</div>
+        </div>
+    </section>
+</body>
+</html>

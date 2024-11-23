@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .contactme {
+            padding: 20px;
+            text-align: center;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkTQVVMMqp4WDGZ2yeZsHxKPGzYkVXE8GVEQ&s);
+            background-size: cover;
+            border: 1px solid rgb(14, 14, 14);
+        }
+        .contactme h2 {
+            font-size: 24px;
+            color: #0c0c0c;
+            text-align: center;
+        }
+        .contact{
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact label {
+            text-align: left;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #fa0202;
+        }
+        .contact input,
+        .contactform textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #090100;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .contact button {
+            padding: 10px 15px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #040404;
+            color: white;
+        }
+        .footer-content p {
+            margin: 5px 0;
+        }
+        button {
+            background-color: #0f0f0f;
+            color: rgb(0, 200, 255);
+        }
+        .third {
+            text-align: left;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contactme">
+        <h2>Contact Me</h2>
+        <form onsubmit="handleSubmit(); return false;" method="post" class="contact">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name please" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required placeholder="For replying you back">
+            <label for="phone Number">Phone number:</label>
+            <input type="number" id="phone Number" name="Phone Number" required placeholder="In case I can't reply through mail">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="What information do you need from me?" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Detailed explanation about subject please" required></textarea>
+            <div class="third"><button type="submit"><b>Send Message</b></button></div>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p><b><strong>My Details:</strong></b></p><br>
+            <p>Phone: +91 8985317837</p>
+            <p>Email: raghavasaimaddi15@gmail.com</p>
+            <p>Address: Ongole, Prakasham Dist, Andhra Pradesh, INDIA</p>
+        </div>
+    </footer>
+    <script> 
+        function handleSubmit() {
+    
+    alert("Your message has been sent successfully! Thnx for contacting me I will reply you back soon.");
+    
+    
+    document.querySelector(".contact").reset();
+}
+
+    </script>
+</body>
+</html>
